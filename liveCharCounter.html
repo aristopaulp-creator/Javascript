@@ -1,0 +1,13 @@
+<input id="INPUT" onkeyup="count()">
+
+<p id="RESULT">0</p>
+
+<script>
+    function count(){
+        var input = document.getElementById("INPUT")
+        var val = input.value
+        var result = document.getElementById("RESULT")
+
+        result.textContent = val.length
+    }
+</script>

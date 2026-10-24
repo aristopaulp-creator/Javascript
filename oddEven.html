@@ -1,0 +1,22 @@
+<input id="input" type="number" min="1">
+
+<button id="button" onclick="checkOddOrEven()">Check</button>
+
+<h1 id="h1"></h1>
+
+<script>
+
+    function checkOddOrEven(){
+        var IN = document.getElementById("input")
+        var H1 = document.getElementById("h1")
+
+        var val = Number(IN.value)
+        
+        if(val % 2 == 0){
+            H1.textContent = "Even"
+        }
+        else{
+            H1.textContent = "Odd"
+        }
+    }
+</script>

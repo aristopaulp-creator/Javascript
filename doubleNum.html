@@ -1,0 +1,16 @@
+<input id="input" type="number">
+
+<button id="button" onclick="doubleNumber()">DOUBLE</button>
+
+<h1 id="h1">0</h1>
+
+<script>
+    function doubleNumber(){
+        var IN = document.getElementById("input")
+        var H1 = document.getElementById("h1")
+        var value = Number(IN.value)
+        var result = value + value
+
+        H1.textContent = result
+    }
+</script>

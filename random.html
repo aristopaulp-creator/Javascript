@@ -1,0 +1,44 @@
+
+<div style="text-align: center;">
+    <h1>
+        Guess the Number from 1 to 10
+    </h1>
+
+    <input id="input" value="0" type="number"></input>
+
+    <button id="check" onclick="Random()">
+        Check
+    </button>
+
+    <p id="state"> </p>
+
+    <P id="score">Your Score: 10</P>
+</div>         
+
+<script>
+
+    var Score = 10
+
+    function Random(){
+
+        if(Score<1){
+            Score = 10
+        }
+        var guess = Math.floor(Math.random()*10+1)
+        var num = document.getElementById("input")
+        var inVal = num.value
+        var State = document.getElementById("state")
+
+        if(inVal == guess){
+            State.textContent = "You Won!"
+        }
+        else{
+            State.textContent = "Try Again!"
+            Score = Score-1
+            var points = document.getElementById("score")
+            points.textContent = "Your score: " + Score 
+        }
+    }
+    
+    
+</script>

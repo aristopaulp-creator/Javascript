@@ -1,0 +1,24 @@
+
+
+<input id="num1"></input>
+<input id="num2"></input>
+
+<button onclick="show()">ADD</button>
+
+<h1 id="re">Result</h1>
+<script>
+    var n1 = document.getElementById("num1")
+    var n2 = document.getElementById("num2")
+    var Result = document.getElementById("re")
+
+
+    function show(){
+        var n1Value = Number(n1.value)
+        var n2Value = Number(n2.value)
+
+        var add = n1Value + n2Value
+        Result.textContent = add
+    }
+
+</script>
+*/
